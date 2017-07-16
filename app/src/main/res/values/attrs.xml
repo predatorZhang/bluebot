@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="ProgressCircleView">
+        <attr name="radius" format="dimension"/>
+        <attr name="strokeWidth" format="dimension"/>
+        <attr name="circleColor" format="color"/>
+        <attr name="ringColor" format="color"/>
+    </declare-styleable>
+    
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="IndicatorView">
+        <attr name="pointCount" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="AutoComplete">
+        <attr name="emailOnly" format="boolean" />
+        <attr name="darkness" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="Crossed">
+        <attr name="dark" format="boolean" />
+    </declare-styleable>
+
+    <attr name="a_in" format="float" />
+    <attr name="a_out" format="float" />
+    <attr name="x_in" format="float" />
+    <attr name="x_out" format="float" />
+    <attr name="y_in" format="float" />
+    <attr name="y_out" format="float" />
+    <attr name="override_visibility" format="boolean" />
+
+    <declare-styleable name="MinSizeImageView">
+        <attr name="minWidth" format="dimension" />
+        <attr name="minHeight" format="dimension" />
+        <attr name="microSize" format="dimension" />
+    </declare-styleable>
+</resources>

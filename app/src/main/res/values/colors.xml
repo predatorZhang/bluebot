@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="header_bg_common">#323a45</color>
+    <color name="title_txt_color">#f1f1f3</color>
+    <color name="circle_color">#323a45</color>
+    <color name="ring_color">#14b9d6</color>
+    
+    <color name="transparent">#00ffffff</color>
+    <color name="orange">#FFA500</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#00FF00</color>
+    <color name="limegreen">#32CD32</color>
+
+    <color name="black">#ff000000</color>
+
+
+    <!--左侧drawer样式-->
+    <color name="divide_15_e5">#ffe4e4e4</color>
+
+    <item name="drawer_bg_color_normal" type="color">#00ffffff</item>
+    <item name="drawer_bg_color_divide" type="color">#ff243040</item>
+    <item name="drawer_bg_color_press" type="color">#ffeeeeee</item>
+
+    <color name="task_list_head">#ffe4e4e4</color>
+    <color name="font_black_content">#222222</color>
+    <color name="font_white">#ffffffff</color>
+    <color name="font_white_disable">#7fffffff</color>
+    <color name="font_black_6">#ff666666</color>
+    <color name="font_green">#ff3bbd79</color>
+
+    <color name="divide">#ffe4e4e4</color>
+
+
+    <drawable name="transparent">#00000000</drawable>
+    <drawable name="white">#ffffffff</drawable>
+    <color name="stand_bg">#fff6f6f6</color>
+    <item name="gray_drawable" type="drawable">#FF323A45</item>
+    <color name="font_black_2">#222222</color>
+
+    <color name="menu_item_text_disable">#ffffffff</color>
+    <color name="white_pressed">#ffd5d5d5</color>
+    <color name="font_black_comment">#ff666666</color>
+    <color name="font_gray">#999999</color>
+    <color name="emoji_line">#ffcbc9ca</color>
+    <color name="white_pressed1">#ffdfdfdf</color>
+    <color name="font_black_content_disabled">#cacaca</color>
+    <item name="drawer_bg_color_bottom" type="color">#ff1e2733</item>
+    <color name="camera_background">#ff353535</color>
+
+    <color name="attachment_btn_color">#A5A5A5</color>
+
+</resources>

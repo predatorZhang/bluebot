@@ -1,0 +1,259 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tc="http://schemas.android.com/apk/res-auto"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_green"
+    android:orientation="vertical"
+    tools:context="com.casic.bluebot.fragments.IndexFragment_" >
+    <RelativeLayout android:id="@+id/rl_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageButton android:id="@+id/ib_power"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/btn_power_on"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+            />
+        <ImageView android:id="@+id/iv_battery"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_battery_half"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+            />
+        <ImageButton android:id="@+id/ib_history"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_history"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+            />
+    </RelativeLayout>
+
+    <com.casic.bluebot.view.ProgressWheel
+        android:id="@+id/pw_search"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        wheel:matProg_barColor="@android:color/holo_green_dark"
+        wheel:matProg_circleRadius="90dp"
+        wheel:matProg_progressIndeterminate="true" />
+
+    <com.casic.bluebot.view.ProgressCircleView
+        android:id="@+id/pcv_index"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        tc:radius="80dip"
+        tc:strokeWidth="5dip"
+        tc:circleColor="#22FFFFFF"
+        tc:ringColor="@color/ring_color"
+        />
+
+    <TextView android:id="@+id/tv_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:text="@string/str_null"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/pcv_index"
+        android:background="@drawable/bg_white"
+        android:gravity="center|center"
+        android:padding="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/tv_state"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_panel"
+        android:gravity="center|center"
+        >
+
+        <EditText
+            android:id="@+id/sendText"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="1"
+            android:text="nihao"
+            android:maxLength="20"/>
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送" />
+
+        </LinearLayout>>
+<!--
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/tv_state"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_panel"
+        android:gravity="center|center"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textColor="@android:color/primary_text_light"
+            android:text="@string/str_title_reference"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            &lt;!&ndash; perfect &ndash;&gt;
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/index_reference_text_size"
+                android:textColor="@android:color/secondary_text_light"
+                android:text="@string/str_perfect"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/index_reference_text_size"
+                android:textColor="@android:color/primary_text_light"
+                android:text="@string/str_perfect_range"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            &lt;!&ndash; good &ndash;&gt;
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/index_reference_text_size"
+                android:textColor="@android:color/secondary_text_light"
+                android:text="@string/str_good"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/index_reference_text_size"
+                android:textColor="@android:color/primary_text_light"
+                android:text="@string/str_good_range"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            &lt;!&ndash; normal &ndash;&gt;
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/index_reference_text_size"
+                android:textColor="@android:color/secondary_text_light"
+                android:text="@string/str_normal"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/index_reference_text_size"
+                android:textColor="@android:color/primary_text_light"
+                android:text="@string/str_normal_range"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            &lt;!&ndash; bad &ndash;&gt;
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/index_reference_text_size"
+                android:textColor="@android:color/secondary_text_light"
+                android:text="@string/str_bad"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/index_reference_text_size"
+                android:textColor="@android:color/primary_text_light"
+                android:text="@string/str_bad_range"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            &lt;!&ndash; dangerous &ndash;&gt;
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/index_reference_text_size"
+                android:textColor="@android:color/secondary_text_light"
+                android:text="@string/str_dangerous"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/index_reference_text_size"
+                android:textColor="@android:color/primary_text_light"
+                android:text="@string/str_dangerous_range"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+-->
+
+</RelativeLayout>

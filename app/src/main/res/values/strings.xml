@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">超能Detector</string>
+    <string name="action_refrush">刷新</string>
+
+
+    <string name="title_section1">甲醛指数</string>
+    <string name="title_section2">历史统计</string>
+    <string name="title_section3">用户信息</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">扫描</string>
+
+    <string name="empty" />
+    <string name="title_activity_guide">guide</string>
+
+    <string name="hint_loading">正在加载中…</string>
+
+    <!-- general -->
+    <string name="str_null">NULL</string>
+    <!-- device list activity -->
+    <string name="devicelist_title">设备列表</string>
+    <!-- device scan -->
+    <string name="devicescan_title">设备搜索</string>
+    <!--  index fagment -->  
+    <string name="str_progress_detecting">检测中...</string>  
+    <string name="str_title_reference">数值参考</string>  
+    <string name="str_perfect">优</string>
+    <string name="str_good">良好</string>
+    <string name="str_normal">一般</string>
+    <string name="str_bad">差</string>
+    <string name="str_dangerous">重污染</string>
+    <string name="str_novalue">未检测</string>
+    <string name="str_perfect_range">0~20</string>
+    <string name="str_good_range">20~40</string>
+    <string name="str_normal_range">40~60</string>
+    <string name="str_bad_range">60~80</string>
+    <string name="str_dangerous_range">80~99</string>
+    
+    <!-- statics fragment -->
+    <string name="btn_day">日</string>
+    <string name="btn_month">月</string>
+    <string name="btn_week">周</string>
+    <!-- profile fragment -->
+   	<string name="btn_signup">注册新用户</string>
+   	<string name="btn_signin">登录</string>
+   	<string name="title_devicelist">设备列表</string>
+   	
+   	<!-- demo -->
+   	<string name="tip_msg">每天下午4点~6点是最佳的通风时间</string>
+
+    <string name="ble_not_supported">该设备不支持蓝牙4.0</string>
+    <string name="bt_not_supported">不支持蓝牙</string>
+    <string-array name="device_filter"><item>SensorTag</item></string-array>
+    <string name="title_activity_base_annotation">BaseAnnotationActivity</string>
+    <string name="title_activity_register">注册</string>
+    <string name="logining">登录中...</string>
+    <string name="title_activity_login">Sign in</string>
+    <string-array name="dialog_login_fail_help">
+        <item>找回密码</item>
+        <item>重发激活邮件</item>
+    </string-array>
+
+    <string name="title_activity_update_tip">UpdateTipActivity</string>
+    <string name="title_activity_reset_password">找回密码</string>
+    <string name="title_activity_about">关于我们</string>
+
+
+
+
+</resources>

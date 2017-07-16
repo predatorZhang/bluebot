@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="100dp"
+    android:padding="3dp"
+    android:orientation="horizontal"
+    android:background="@drawable/view_shadow"
+    >
+    <ImageView android:id="@+id/iv_icon"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:padding="3dp"
+        android:src="@drawable/img_ads"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        />
+    
+</LinearLayout>
